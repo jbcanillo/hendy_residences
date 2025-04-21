@@ -17,7 +17,7 @@ This is for the technical assessment for LAMPP stack developer of SmartSourcing.
 
 ```bash
 git https://github.com/jbcanillo/hendy_residences.git
-cd hendy-residence
+cd hendy_residence
 ```
 
 ---
