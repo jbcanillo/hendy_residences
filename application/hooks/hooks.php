@@ -17,7 +17,7 @@ function auth_check()
 
 	// Check if the user is logged in and the route is 'members'
 	if (!$ci->session->userdata('logged_in') && $ci->uri->segment(1) == 'members') {
-		// Redirect to login page or show an error
+		// Redirect to login page
 		redirect('log-in');
 	}
 }

@@ -82,8 +82,8 @@ class Auth extends MX_Controller
 
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
             $this->form_validation->set_rules('name', 'Name', 'required');
+            $this->form_validation->set_rules('phone', 'Phone', 'regex_match[/^[0-9]{10}$/]');
             $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]');
-            $this->form_validation->set_rules('phone', 'Phone', 'required|regex_match[/^[0-9]{10}$/]');
             $this->form_validation->set_rules('confirm_password', 'Password Confirmation', 'required|matches[password]');
             if ($this->form_validation->run() == FALSE) {
                 $this->session->set_flashdata('error', validation_errors());

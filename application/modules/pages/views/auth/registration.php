@@ -25,7 +25,7 @@
                 </div>
                 <div class="form-group">
                     <label for="phone">Phone</label>
-                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone*" required>
+                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone">
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>

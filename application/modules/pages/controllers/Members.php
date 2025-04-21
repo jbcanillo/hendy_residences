@@ -31,7 +31,7 @@ class Members extends MX_Controller
         if ($this->input->post()) {
             $this->form_validation->set_rules('name', 'Name', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-            $this->form_validation->set_rules('phone', 'Phone', 'required|regex_match[/^[0-9]{10}$/]');
+            $this->form_validation->set_rules('phone', 'Phone', 'regex_match[/^[0-9]{10}$/]');
             $this->form_validation->set_rules('password', 'Password', 'required|min_length[6]');
             $this->form_validation->set_rules('confirm_password', 'Password Confirmation', 'required|matches[password]');
 
@@ -78,7 +78,7 @@ class Members extends MX_Controller
         if ($this->input->post()) {
             $this->form_validation->set_rules('name', 'Name', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
-            $this->form_validation->set_rules('phone', 'Phone', 'required|regex_match[/^[0-9]{10}$/]');
+            $this->form_validation->set_rules('phone', 'Phone', 'regex_match[/^[0-9]{10}$/]');
             
             // Password is optional, only validate if provided
             if ($this->input->post('password')) {
