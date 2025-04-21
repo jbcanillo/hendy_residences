@@ -83,12 +83,12 @@ To set up the initial database schema:
 
 ### 6. 🚀 Running the Application
 
-Access the application via:  
+1. Access the application via:  
 [http://localhost/hendy_residences](http://localhost/hendy_residences)
 
-Log in using the default admin credentials:
-Email: admin@example.com
-Password: admin123
+2. Log in using the default admin credentials:
+      `Email: admin@example.com`
+      `Password: admin123`
 ---
 
 ### 🔍 Key Development Decisions
