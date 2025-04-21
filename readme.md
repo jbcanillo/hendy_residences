@@ -1,18 +1,7 @@
 # 🏡 Hendy Residence Website
 
 A web application project built to manage the **Hendy Residence** website. This app is developed using **CodeIgniter 3.1.13** with SCSS for styling and follows the HMVC design pattern for clean modular development.
-
----
-
-## 📦 Features
-
-- User authentication with CSRF protection
-- Modular page architecture using HMVC pattern
-- SCSS-based styling with custom themes
-- Flash messaging for user feedback
-- Secure route protection via hooks
-- MySQL-based data persistence
-
+This is for the technical assessment for LAMPP stack developer of SmartSourcing.
 ---
 
 ## 🛠️ Installation & Setup
