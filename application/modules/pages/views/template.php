@@ -96,11 +96,14 @@
 					<?php else : ?>
 						<a href="<?php echo base_url(); ?>" class="menu__home"><span>Home</span></a>
 					<?php endif; ?>
+					<?php if (isset($_SESSION['logged_in'])): ?>
+						<a href="<?php echo base_url('members') ?>"><span>Members</span></a>
+					<?php endif; ?>
 				</div>
 			</nav>
 		</div>
 		<div class="menu__right-corner" style="right:175px">
-			<?php if(!isset($_SESSION['logged_in'])): ?>
+			<?php if (!isset($_SESSION['logged_in'])): ?>
 				<a href="<?php echo base_url('log-in') ?>" class="login">Log-in</a>
 			<?php else: ?>
 				<a href="<?php echo base_url('log-out') ?>" class="login">Log-out</a>

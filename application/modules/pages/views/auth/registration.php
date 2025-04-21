@@ -15,30 +15,30 @@
                     </div>
                 <?php endif; ?>
                 <?php echo form_open('register'); ?>
-                    <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="text" name="name" id="name" class="form-control" placeholder="Full Name*" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" name="phone" id="phone" class="form-control" placeholder="Phone*" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" class="form-control" placeholder="Password*" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirm_password">Confirm Password</label>
-                        <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password*" required>
-                    </div>
-                    <div class="form-group text-center">
-                        <button type="submit" class="btn button btn-block">Register</button>
-                    </div>
-                </form>
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Full Name*" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone*" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Password*" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control" placeholder="Confirm Password*" required>
+                </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn button btn-block">Register</button>
+                </div>
+                <?php form_close(); ?>
             </div>
             <div class="card-footer text-center">
                 <small>Already have an account? <a href="<?php echo base_url('log-in'); ?>">Log in here</a></small>

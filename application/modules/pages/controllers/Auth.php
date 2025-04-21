@@ -53,7 +53,7 @@ class Auth extends MX_Controller
                     'user_id' => $user->id,
                     'email' => $user->email,
                     'name' => $user->name,
-                    'type' => $user->type,
+                    'role' => $user->role,
                     'logged_in' => TRUE
                 ]);
                 redirect('members');
@@ -66,8 +66,8 @@ class Auth extends MX_Controller
 
     public function logout()
     {
-        $this->session->unset_userdata(['user_id', 'email', 'name', 'type', 'logged_in']);
-        $this->session->set_flashdata('success', 'You have been logged out');
+        $this->session->unset_userdata(['user_id', 'email', 'name', 'role', 'logged_in']);
+        $this->session->set_flashdata('success', 'You have been logged out!');
         redirect('log-in');
     }
 
@@ -102,14 +102,14 @@ class Auth extends MX_Controller
                 'name' => $this->input->post('name'),
                 'password' => password_hash($this->input->post('password'), PASSWORD_BCRYPT),
                 'phone' => $this->input->post('phone'),
-                'type' => 'member'
+                'role' => 'member'
             ];
 
             if ($this->User->create($user)) {
-                $this->session->set_flashdata('success', 'Registration successful. Please log-in now.');
+                $this->session->set_flashdata('success', 'Your registration has been successful. Please log-in now.');
                 redirect('log-in');
             } else {
-                $this->session->set_flashdata('error', 'Registration failed. Please try again.');
+                $this->session->set_flashdata('error', 'Your registration was not successful. Please try again.');
                 redirect('register');
             }
         }

@@ -29,7 +29,7 @@ class Migration_Create_users_table extends CI_Migration
                 'type' => 'VARCHAR',
                 'constraint' => '45',
             ],
-            'type' => [
+            'role' => [
                 'type' => 'ENUM("admin", "member")',
                 'default' => 'member',
             ]
@@ -53,7 +53,7 @@ class Migration_Create_users_table extends CI_Migration
             'password' => password_hash('admin123', PASSWORD_DEFAULT),
             'name' => 'Administrator',
             'phone' => '1234567890',
-            'type' => 'admin',
+            'role' => 'admin',
         ]);
     }
 

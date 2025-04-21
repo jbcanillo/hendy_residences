@@ -63,8 +63,8 @@ $route['log-out']                               = 'pages/auth/logout';
 
 $route['members']                               = 'pages/members/index';
 $route['members/add']                           = 'pages/members/add';
-$route['members/edit/:num']                     = 'pages/members/edit/$1';
-$route['members/delete/:num']                   = 'pages/members/delete/$1';
+$route['members/(:num)']                        = 'pages/members/edit/$1';
+$route['members/(:num)/delete']                 = 'pages/members/delete/$1';
 
 $route['(.+)'] 									= 'pages/index';
 $route['404_override'] 							= '';

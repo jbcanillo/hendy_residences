@@ -46,7 +46,7 @@ class User extends CI_Model {
     // Delete user
     public function delete($id) {
         $this->db->where('id', $id);
-        return $this->db->delete($this->table);
+        return print_r($this->db->delete($this->table));
     }
 
     // Check if email exists

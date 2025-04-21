@@ -31,7 +31,7 @@
                     <div class="form-group text-center">
                         <button type="submit" class="btn button btn-block">Log-in</button>
                     </div>
-                </form>
+                <?php form_close(); ?>
             </div>
             <div class="card-footer text-center">
                 <small>Don't have an account? <a href="<?php echo base_url('register'); ?>">Register here</a></small>
